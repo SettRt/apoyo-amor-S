@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siempre contigo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="hero">
+    <nav class="topbar" aria-label="Principal">
+      <a href="#mensaje">Mensaje</a>
+      <a href="#recuerdos">Fotos</a>
+      <a href="#audio">Audio</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Para la mujer que amo</p>
+      <h1>Eres fuerte, eres valiosa, y nunca vas a caminar sola mi niña.</h1>
+      <p class="hero-copy">
+        Hice este rincón para recordarte que te amo muchísimo, que estoy aquí para ti
+        en los días bonitos y también en los difíciles, y que mi deseo más grande es verte
+        muy, muy, muy feliz.
+      </p>
+      <div class="hero-actions">
+        <a class="primary-btn" href="#mensaje">Para ti mi amor</a>
+        <button class="heart-btn" type="button" id="heartButton" aria-label="Enviar corazones">❤</button>
+      </div>
+    </section>
+
+    <div class="scroll-hint" aria-hidden="true">↓</div>
+  </header>
+
+  <main>
+    <section class="message-band" id="mensaje">
+      <div class="section-heading">
+        <p class="eyebrow">Cuando necesites fuerza</p>
+        <h2>Recuerda esto, mi amor</h2>
+      </div>
+
+      <div class="affirmation-grid">
+        <article>
+          <span>01</span>
+          <h3>Eres más fuerte de lo que imaginas</h3>
+          <p>Aun cuando el día pese, hay una luz enorme en ti. Yo la veo, la admiro y siempre voy a recordártela.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>No tienes que poder con todo sola</h3>
+          <p>Puedes contar conmigo para lo que sea. Para hablar, para llorar, para reír o simplemente para estar en silencio juntos.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Te amo en las buenas y en las malas</h3>
+          <p>Mi amor no depende de que todo esté perfecto entre ambos. Estoy contigo en cada versión del camino que tengamos que pasar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="promise-section">
+      <div class="promise-copy">
+        <p class="eyebrow">Mi promesa</p>
+        <h2>Aquí estoy para ti, sin importar lo que pase nunca te dejaré sola.</h2>
+        <p>
+          Quiero ser ese lugar donde puedas descansar el corazón. Quiero cuidarte, apoyarte,
+          escucharte y celebrar contigo cada pequeña victoria. Si algún día dudas de ti,
+          vuelve aquí y lee esto: yo creo en ti, te elijo y te amo con todo mi corazón, con toda mi alma
+          y ya verás que podremos con esto y más.
+        </p>
+      </div>
+
+      <div class="love-note" role="note">
+        <p>“Solo quiero hacerte una mujer muy, muy, muy feliz.”</p>
+        <span>Con todo mi amor, tu flaquito.</span>
+      </div>
+    </section>
+
+    <section class="photo-section" id="recuerdos">
+      <div class="section-heading">
+        <p class="eyebrow">Nuestros recuerdos</p>
+        <h2>Fotos para que saques una sonrisita</h2>
+        <p> Recuerda que eres lo mejor de este mundo.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-frame">
+          <img src="assets/fotos/foto-1.jpg" alt="Un recuerdo especial juntos" onerror="this.closest('figure').classList.add('missing-photo'); this.remove();">
+          <figcaption>Un día bonito</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <img src="assets/fotos/foto-2.jpg" alt="Una foto de ella sonriendo" onerror="this.closest('figure').classList.add('missing-photo'); this.remove();">
+          <figcaption>Tu sonrisa favorita</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <img src="assets/fotos/foto-3.jpg" alt="Un momento feliz" onerror="this.closest('figure').classList.add('missing-photo'); this.remove();">
+          <figcaption>Un abrazo pendiente</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="audio-section" id="audio">
+      <div class="audio-panel">
+        <div>
+          <p class="eyebrow">Tu voz</p>
+          <h2>Un audio para cuando me extrañes o necesites ánimos</h2>
+          <p> Mis palabras para ti mi Papoi Novia</p>
+        </div>
+        <audio controls preload="metadata">
+          <source src="assets/audio/mi-audio.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+      </div>
+    </section>
+
+    <section class="small-things">
+      <h2>Para cuando el mundo se sienta pesado</h2>
+      <div class="quote-rotator" aria-live="polite">
+        <p id="quoteText">Respira, mi amor. Un paso a la vez. Yo estoy contigo.</p>
+        <button type="button" id="quoteButton">Otra frase</button>
+      </div>
+
+      <div class="personal-message">
+        <h2>Mensaje para mi gordita Scarleth</h2>
+        <div class="letter">
+          <p>
+            Pues, mi amor, solo queria decirte que a pesar de que hemos pasado por momentos dificiles,
+            por cosas que nos han hecho sentir mal a ambos, hemos dicho cosas feas a ambos, quiero que
+            sepas que a pesar de todo eso, te sigo eligiendo a ti, quiero que seas tu, quiero envejecer
+            contigo.
+          </p>
+          <p>
+            Eres una mujer muy, muy, muy fuerte que ha salido de muchas cosas, y yo se que aunque es
+            dificil, tu vas a encontrar el camino para salir de algun problema, y eso admiro de ti.
+            No sabes lo feliz que soy de tenerte en mi vida y de cuanto quiero seguirme esforzando dia
+            a dia por volverte a ser una mujer muy fuerte y feliz, y volvamos a ser un nosotros, mi amor.
+          </p>
+          <p>
+            Te amo mucho, de verdad, pero mucho, mucho. Siempre cuenta conmigo, mi amor, en las buenas
+            y en las malas. Si. Como te lo dije, somos un equipo, el equipo Dinoamor.
+          </p>
+          <p>
+            Te amo, mi comandante. Siempre puedes llamarme o escribirme. Yo siempre estare aqui para ti.
+            Te amo 3 millones.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con amor, para recordarte que siempre puedes contar conmigo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
